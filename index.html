@@ -1,15 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Landing Page</title>
-		<link rel="icon" href="assets/icon.png" sizes="32x32" type="image/png">
-		<link rel="stylesheet" href="/dist/style.css" />
-		<script defer src="/dist/script.js"></script>
-		<script src="https://kit.fontawesome.com/d1ae62ec83.js" crossorigin="anonymous"></script>
-	</head>
-	<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="icon" href="assets/icon.png" sizes="32x32" type="image/png" />
+    <link rel="stylesheet" href="/dist/style.css" />
+    <script defer src="/dist/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d1ae62ec83.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <i class="fas fa-atom fa-xl fa-spin"></i>
+        <h4 class="header__logo--title">Core</h4>
+      </div>
 
-	</body>
+      <div class="header__ham">
+        <i class="fas fa-bars fa-2xl"></i>
+      </div>
+      <div class="header__close hide">
+        <i class="fa-solid fa-xmark fa-2xl"></i>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="header__nav--ul">
+          <li class="header__nav--list"><a href="/">Home</a></li>
+          <li class="header__nav--list"><a href="/">Services</a></li>
+          <li class="header__nav--list"><a href="/">Contact</a></li>
+          <li class="header__nav--list"><a href="/">Sales</a></li>
+          <li class="header__nav--list"><a href="/">Lorem</a></li>
+          <li class="header__nav--list"><a href="/">Lorem</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <p class="hero__top">
+          Lorem ipsum dolor sit amet, consectetur adipiscing
+        </p>
+        <h1 class="hero__title">
+          Connecting the <span class="hero__title--span">world</span>
+        </h1>
+        <div class="hero__button">
+          <button class=".rect-button hero__button--blue">Lorem ipsum</button>
+          <button class="hero__button--white">dolor sit amet</button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
