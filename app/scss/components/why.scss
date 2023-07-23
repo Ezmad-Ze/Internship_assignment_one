@@ -1,0 +1,126 @@
+@use "../util" as *;
+
+.why {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 20px 30px;
+  &__top {
+    color: var(--black);
+    font-family: var(--font-laxend);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-top: rem(40);
+    &--title {
+      position: relative;
+      font-weight: 300;
+      text-transform: uppercase;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        margin-top: rem(10);
+        left: rem(100);
+        width: rem(40);
+        height: rem(1);
+        background-color: var(--black);
+      }
+      &--span {
+        font-weight: 700;
+      }
+    }
+    &--desc {
+      font-weight: 300;
+      font-size: rem(15);
+      text-align: center;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(medium) {
+      flex-direction: row;
+      overflow: hidden;
+    }
+    &--content {
+      background-color: var(--blue-grey);
+      width: rem(170);
+      height: rem(170);
+      padding: 3px;
+      position: relative;
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 5px;
+        top: 0;
+        width: rem(170);
+        height: 2px;
+        background-color: var(--grey);
+      }
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        width: rem(170);
+        height: 2px;
+        background-color: var(--grey);
+      }
+      &:hover {
+        background-color: aqua;
+      }
+      &--line {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: rem(17);
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          left: 0;
+          bottom: 5px;
+          height: rem(170);
+          width: 2px;
+          background-color: var(--grey);
+        }
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+          top: 5px;
+          right: 0;
+          height: rem(170);
+          width: 2px;
+          background-color: var(--grey);
+        }
+        &--info {
+          font-size: rem(20);
+          color: var(--blue);
+          letter-spacing: rem(2);
+          text-transform: uppercase;
+        }
+        &--title {
+          text-align: center;
+          font-size: rem(15);
+          font-family: var(--font-laxend);
+          margin-top: rem(-10);
+          text-transform: uppercase;
+        }
+        &--desc {
+          text-align: center;
+          font-size: rem(13);
+          margin-top: rem(-10);
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+}
