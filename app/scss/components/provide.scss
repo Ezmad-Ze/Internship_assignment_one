@@ -1,0 +1,115 @@
+@use "../util" as *;
+
+.provide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-black);
+  padding: 20px 70px;
+  &__top {
+    color: var(--white);
+    font-family: var(--font-laxend);
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    padding-top: rem(40);
+    &--title {
+      position: relative;
+      font-weight: 300;
+      text-transform: uppercase;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        margin-top: rem(10);
+        left: rem(65);
+        width: rem(40);
+        height: rem(1);
+        background-color: var(--white);
+      }
+      &--span {
+        font-weight: 700;
+      }
+    }
+    &--desc {
+      font-weight: 300;
+      font-size: rem(15);
+      text-align: center;
+    }
+  }
+  &__card {
+    // max-width: 1200px;
+    color: var(--white);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    gap: rem(15);
+    margin-top: rem(10);
+    @include breakpoint(medium) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include breakpoint(large) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    &--item {
+      display: flex;
+      flex-direction: column;
+      place-items: center;
+      //   padding: rem(20) rem(10);
+      border: 1px solid var(--white);
+      width: 300px;
+      height: 300px;
+      justify-content: space-evenly;
+      &:nth-child(2) {
+        background-color: var(--blue);
+      }
+      &--title {
+        padding-top: rem(20);
+        font-weight: 700;
+        font-size: rem(20);
+        text-transform: uppercase;
+        font-family: var(--font-laxend);
+      }
+      &--desc {
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: rem(-20);
+        padding: 0 20px;
+        font-size: rem(12);
+        font-weight: 400;
+      }
+      &--a > span {
+        color: var(--blue);
+        font-size: rem(12);
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.fa-puzzle-piece,
+.fa-cloud,
+.fa-server,
+.fa-comment-alt,
+.fa-charging-station,
+.fa-link {
+  position: relative;
+  padding-top: 10px;
+  color: var(--white);
+}
+.fa-puzzle-piece::after,
+.fa-cloud::after,
+.fa-server::after,
+.fa-comment-alt::after,
+.fa-charging-station::after,
+.fa-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: rem(25);
+  left: rem(-30);
+  width: rem(90);
+  height: rem(2);
+  background-color: var(--white);
+}
