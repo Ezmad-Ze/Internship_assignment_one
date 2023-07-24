@@ -1,0 +1,30 @@
+@use "../util" as *;
+
+.social {
+  background-color: black;
+  margin-top: rem(-30);
+  padding: 0 rem(10);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  @include breakpoint(medium) {
+    padding: rem(10) rem(70);
+  }
+  &__copyright {
+    text-transform: capitalize;
+  }
+  &__icons {
+    gap: rem(100);
+  }
+}
+
+.fa-facebook-square {
+  color: blue;
+}
+.fa-telegram {
+  color: lightblue;
+}
+.fa-reddit-square {
+  color: #ff4500;
+}
