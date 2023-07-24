@@ -1,0 +1,62 @@
+@use "../util" as *;
+
+.search {
+  background-color: var(--blue-grey);
+  &__background {
+    background-color: var(--background-black);
+    border-radius: 50% 50% 0 0 / 50% 50% 0 0;
+    padding: rem(20);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(20);
+    color: var(--white);
+    &--text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      &--title {
+        text-transform: uppercase;
+      }
+      &--desc {
+        margin-top: rem(-15);
+        font-size: rem(13);
+        color: grey;
+        letter-spacing: 1px;
+      }
+    }
+    &--input {
+      background-color: var(--white);
+      width: 80%;
+      max-width: rem(500);
+      padding-left: rem(10);
+      padding-right: rem(4);
+      border-radius: rem(20);
+      display: flex;
+      & > input {
+        width: 100%;
+        border: none;
+        border-top-left-radius: rem(20);
+        border-bottom-left-radius: rem(20);
+        padding-left: rem(20);
+        &:focus {
+          outline: none;
+        }
+        &::placeholder {
+          text-transform: capitalize;
+        }
+      }
+      & > button {
+        border-radius: 50%;
+        border: none;
+        background-color: var(--blue);
+        padding: rem(10);
+        & > i {
+          color: var(--white);
+        }
+      }
+    }
+  }
+}
