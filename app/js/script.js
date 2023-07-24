@@ -3,7 +3,7 @@ const close = document.querySelector(".header__close");
 const nav = document.querySelector(".header__nav");
 const mediaQuery = window.matchMedia("(max-width: 640px)");
 
-let value = false;
+let value = true;
 
 hamburger.addEventListener("click", () => {
   value == true ? check(mediaQuery) : null;
