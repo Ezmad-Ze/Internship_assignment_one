@@ -68,14 +68,11 @@
     &--form {
       background-color: var(--white);
       padding: rem(35);
-      //   margin-top: rem(-150);
-      //   max-width: rem(470);
       @include breakpoint(large) {
         position: absolute;
         width: 100%;
         top: 25%;
         left: 75%;
-        // margin-top: 0;
       }
       &--fieldset {
         display: flex;
@@ -214,6 +211,7 @@
           background-color: var(--blue);
           align-self: flex-end;
           margin-right: rem(-25);
+          cursor: pointer;
           & > i {
             color: var(--white);
           }

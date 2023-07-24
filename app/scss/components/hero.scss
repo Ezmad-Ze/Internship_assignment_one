@@ -82,9 +82,11 @@
     &--blue {
       background-color: var(--blue);
       color: var(--white);
+      cursor: pointer;
     }
     &--white {
       background-color: var(--white);
+      cursor: pointer;
     }
   }
   &__icon {

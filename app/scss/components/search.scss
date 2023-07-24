@@ -53,6 +53,7 @@
         border: none;
         background-color: var(--blue);
         padding: rem(10);
+        cursor: pointer;
         & > i {
           color: var(--white);
         }

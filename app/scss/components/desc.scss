@@ -43,19 +43,15 @@
       background-color: var(--blue);
       color: var(--white);
       margin-bottom: 20px;
+      cursor: pointer;
     }
   }
   &__img {
     display: none;
     @include breakpoint(medium) {
       display: block;
-      //   display: flex;
-      //   align-items: center;
-      //   justify-content: center;
       width: 40%;
-      //   width: 900px;
       position: relative;
-      //   background-color: aqua;
 
       &--square {
         position: absolute;
