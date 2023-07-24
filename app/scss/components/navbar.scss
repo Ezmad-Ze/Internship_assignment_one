@@ -20,12 +20,14 @@
   }
   &__ham {
     display: block;
+    cursor: pointer;
     @include breakpoint(medium) {
       display: none;
     }
   }
   &__close {
     display: block;
+    cursor: pointer;
     @include breakpoint(medium) {
       display: none;
     }
@@ -37,6 +39,7 @@
     top: 5rem;
     left: 18px;
     background-color: var(--blue-grey);
+    z-index: 2;
     @include breakpoint(medium) {
       display: block;
       position: static;
