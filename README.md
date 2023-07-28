@@ -48,6 +48,7 @@ This project is an implementation of the [Webpage Reconstruction from an Image](
 - [The gulp sass boilerplate from coder coder blog](https://coder-coder.com/gulp-4-walk-through/)
 - [To get scss boilerplate and how to use it. I used Jessica Chan.](https://www.youtube.com/@TheCoderCoder)
 - [To create svg for the hero section](https://www.shapedivider.app/)
+- [For Icons](https://fontawesome.com/icons)
 
 ## Author
 
