@@ -43,7 +43,11 @@ This project is an implementation of the [Webpage Reconstruction from an Image](
 
 - [Building navbar](https://dev.to/devggaurav/let-s-build-a-responsive-navbar-and-hamburger-menu-using-html-css-and-javascript-4gci)
 - [To check few syntax](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [What's gulp #1](http://brandonclapp.github.io/what-is-gulp-js-and-why-use-it/)
+- [What's gul #2](https://css-tricks.com/gulp-for-beginners/)
+- [The gulp sass boilerplate from coder coder blog](https://coder-coder.com/gulp-4-walk-through/)
 - [To get scss boilerplate and how to use it. I used Jessica Chan.](https://www.youtube.com/@TheCoderCoder)
+- [To create svg for the hero section](https://www.shapedivider.app/)
 
 ## Author
 
