@@ -26,8 +26,8 @@ This project is an implementation of the [Webpage Reconstruction from an Image](
 ## Instructions
 
 - Install [gulp](https://www.npmjs.com/package/gulp) from npm [read here for more about gulp](https://brandonclapp.github.io/what-is-gulp-js-and-why-use-it/)
-- After opening the code, run *npm install*
-- Then run *gulp* on the terminal
+- After opening the code, run _npm install_
+- Then run _gulp_ on the terminal
 - Then go to the localhost on the terminal. **It works!**
 
 ## Built with
